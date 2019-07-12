@@ -8,15 +8,15 @@ pipeline {
 			}
 		}			
 		
-		stage('Integration test') {
-			steps {
-				sh 'serverless deploy --stage dev'
-				sh 'serverless invoke --stage dev --function hello'					
+		#stage('Integration test') {
+			#steps {
+				#sh 'serverless deploy --stage dev'
+				#sh 'serverless invoke --stage dev --function hello'					
 			}
 		}
 				
 		
-	 	stage('Production') {
+	 	#stage('Production') {
 			when {
 			   env.BRANCH_NAME == 'master'	
 			}
