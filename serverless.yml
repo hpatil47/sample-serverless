@@ -19,8 +19,8 @@ provider:
 
 # you can overwrite defaults here
 #defaults:
-#  stage: dev
-#  region: us-east-1
+  stage: dev
+  region: us-east-1
 
 # you can add packaging information here
 #package:
