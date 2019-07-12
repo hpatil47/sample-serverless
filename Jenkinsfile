@@ -9,7 +9,7 @@ pipeline {
                 }
 		stage('Unit test') {
 			steps {				
- 			    sh 'serverless --help' // to ensure it is installed
+ 			    sh 'serverless --version' // to ensure it is installed
 			}
 		}			
 		
